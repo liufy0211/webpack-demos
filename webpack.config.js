@@ -19,6 +19,6 @@ module.exports = {
     推荐开发的时候使用 development ，构建质量不好，构建速度快
     如果要发布上线使用 production ，后见质量好，但是打包速度慢
   */   
-  mode: 'development' // production、development
+  mode: 'production' // production、development
 }
 // 以上配置完 npx webpack --config webpack.config.js
