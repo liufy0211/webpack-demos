@@ -5,6 +5,8 @@
 */ 
 
 const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 module.exports = {
   entry: './src/index.js',  // 默认就是 src/index.js，也可以配置别的
   output: {
@@ -43,6 +45,15 @@ module.exports = {
         ]
       }
     ]
-  }
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './index.html', // 告诉它需要打包的html文件路径
+      minify: {
+        removeComments: true, // 删除注释
+        collapseWhitespace: true // 去除回车换行空格
+      }
+    })
+  ],
 }
 // 以上配置完 npx webpack --config webpack.config.js
