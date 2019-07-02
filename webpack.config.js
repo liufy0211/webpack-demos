@@ -35,6 +35,12 @@ module.exports = {
           'style-loader', // 2. 使用 style-loader 生成 style 节点插入页面的 head 中
           'css-loader' // 1. 先使用 css-loader 将 css 转为 JavaScript 模块
         ]
+      },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: [
+          'file-loader'
+        ]
       }
     ]
   }
