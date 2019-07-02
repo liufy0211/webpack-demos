@@ -5,7 +5,8 @@
 */ 
 
 const path = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 module.exports = {
   entry: './src/index.js',  // 默认就是 src/index.js，也可以配置别的
@@ -39,7 +40,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.(png|svg|jpg|gif)$/,
+        test: /\.(png|svg|jpg|gif|jpeg)$/,
         use: [
           'file-loader'
         ]
@@ -47,6 +48,7 @@ module.exports = {
     ]
   },
   plugins: [
+    new CleanWebpackPlugin(), // 打包之前先清除 dist 目录，默认查找清除 dist 目录
     new HtmlWebpackPlugin({
       template: './index.html', // 告诉它需要打包的html文件路径
       minify: {

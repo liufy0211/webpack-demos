@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Imports\nvar getUrl = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/getUrl.js */ \"./node_modules/css-loader/dist/runtime/getUrl.js\");\nvar ___CSS_LOADER_URL___0___ = getUrl(__webpack_require__(/*! ../assets/00.jpg */ \"./src/assets/00.jpg\"));\n// Module\nexports.push([module.i, \"body {\\r\\n  background-color: hotpink;\\r\\n  background-image: url(\" + ___CSS_LOADER_URL___0___ + \")\\r\\n}\", \"\"]);\n\n\n//# sourceURL=webpack:///./src/styles/index.css?./node_modules/css-loader/dist/cjs.js");
+eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Imports\nvar getUrl = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/getUrl.js */ \"./node_modules/css-loader/dist/runtime/getUrl.js\");\nvar ___CSS_LOADER_URL___0___ = getUrl(__webpack_require__(/*! ../assets/01.jpg */ \"./src/assets/01.jpg\"));\n// Module\nexports.push([module.i, \"body {\\r\\n  background-color: hotpink;\\r\\n  background-image: url(\" + ___CSS_LOADER_URL___0___ + \")\\r\\n}\", \"\"]);\n\n\n//# sourceURL=webpack:///./src/styles/index.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -143,14 +143,14 @@ eval("\n/**\n * When source maps are enabled, `style-loader` uses a link element
 
 /***/ }),
 
-/***/ "./src/assets/00.jpg":
+/***/ "./src/assets/01.jpg":
 /*!***************************!*\
-  !*** ./src/assets/00.jpg ***!
+  !*** ./src/assets/01.jpg ***!
   \***************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__.p + \"0b9ea3cf42cd606656fe237e13e6f27b.jpg\";\n\n//# sourceURL=webpack:///./src/assets/00.jpg?");
+eval("module.exports = __webpack_require__.p + \"9a9b0cbf4df5db92cb628cf3b9846c30.jpg\";\n\n//# sourceURL=webpack:///./src/assets/01.jpg?");
 
 /***/ }),
 
