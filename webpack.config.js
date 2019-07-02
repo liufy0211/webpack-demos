@@ -19,6 +19,24 @@ module.exports = {
     推荐开发的时候使用 development ，构建质量不好，构建速度快
     如果要发布上线使用 production ，后见质量好，但是打包速度慢
   */   
-  mode: 'production' // production、development
+  mode: 'production', // production、development
+  mode: 'development', // production、development
+  /**
+   * 对各种资源模块的打包配置 .js、.css、.less、.scss、.vue。。。。
+   */
+  module: {
+    /**
+     * 模块的打包规则
+     */
+    rules: [
+      { // 当 test 匹配到以 .css 结尾的文件资源的时候，use 使用 style-loader、css-loader 加载器进行解析处理
+        test: /\.css$/,
+        use: [
+          'style-loader', // 2. 使用 style-loader 生成 style 节点插入页面的 head 中
+          'css-loader' // 1. 先使用 css-loader 将 css 转为 JavaScript 模块
+        ]
+      }
+    ]
+  }
 }
 // 以上配置完 npx webpack --config webpack.config.js
