@@ -40,7 +40,13 @@ module.exports = {
         ]
       },
       {
-        test: /\.(png|svg|jpg|gif|jpeg)$/,
+        test: /\.(png|svg|jpg|gif|jpeg)$/,  // 图片资源
+        use: [
+          'file-loader'
+        ]
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/, // 字体资源
         use: [
           'file-loader'
         ]
